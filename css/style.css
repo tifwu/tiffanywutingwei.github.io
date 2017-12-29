@@ -546,6 +546,7 @@ div .center-div h2 {
 .content .text-body{
   width: 100%;
   margin: 100px auto 100px;
+  padding: inherit;
   display: inherit;
 }
 
