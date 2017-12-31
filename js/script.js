@@ -114,7 +114,7 @@ Masonry Check Script
 function Masonry() {
 
        var $container = $('.portfolio-grid');
-     
+
        $container.imagesLoaded( function(){
          $container.masonry({
            itemSelector : 'li'
@@ -167,7 +167,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["show case ", "projects "],
+            strings: ["problem solver", "keen observer", "UX designer"],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,

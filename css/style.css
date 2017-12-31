@@ -2,11 +2,13 @@
 
 
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", "Helvetica Neue", "Open Sans", sans-serif;
   font-size:14px;
   font-weight: 400;
   overflow-y:scroll;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
 }
 
 ::selection {
@@ -344,6 +346,23 @@ header .ajax-link{
   text-align: right;
 }
 
+/*
+==========================
+Index
+==========================
+ */
+
+.bg {
+  /* The image used */
+  background-image: url(../img/landing.jpg);
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*
 **************************
@@ -822,6 +841,21 @@ footer{
 CONTACT
 **************************
 */
+
+#about-me {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #2f3537;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 32px;
+  float: none;
+  width: 80%;
+  margin: 10px auto 10px auto;
+  text-align: justify;
+
+}
 
 .contact-one, .contact-two{
   width:30%;
