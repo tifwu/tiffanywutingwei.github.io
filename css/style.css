@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+@import url(//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
 
 
-body{
-  font-family: "Raleway", "Helvetica Neue", "Open Sans", sans-serif;
+html, body{
+  font-family: "Raleway", sans-serif;
   font-size:18px;
   font-weight: 400;
   overflow-y:scroll;
@@ -341,8 +341,8 @@ header li:hover ul{
 }
 
 header .ajax-link{
-  margin: 0 0 0 20px;
-  text-align: right;
+  margin: 0 0 0 auto;
+  text-align: left;
 }
 
 /*
@@ -382,8 +382,9 @@ CONTENT
 }
 
 .project-title{
-  width: 100%;
+  width: 80%;
   height: 100px;
+  margin: auto;
 }
 
 .one-column{
@@ -420,7 +421,9 @@ CONTENT
 
 #site-type{
   width: 1140px;
-  margin: 200px auto 200px;
+  margin: auto;
+  padding: 10% 0 15% 0;
+  background-image: url(../img/landing.jpg);
 }
 
 #site-type h1{
@@ -442,6 +445,11 @@ CONTENT
   letter-spacing:1px;
   width:40%;
   text-align: left;
+}
+
+.portfolio-grid .grid-item img {
+  display: block;
+  margin: auto;
 }
 
 /*project-page*/
@@ -573,6 +581,7 @@ div .center-div h2 {
   color:#2f3537;
   font-weight:700;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .content .text-body h3{
@@ -584,7 +593,7 @@ div .center-div h2 {
 
 .content .text-body h4{
   font-size:14px;
-  font-family: "Open Sans Condensed", "Raleway", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   color:#2f3537;
   font-weight:700;
   text-align: left;
@@ -613,10 +622,19 @@ div .center-div h2 {
   width: 80%;
   margin: 10px auto 10px auto;
   text-align: justify;
-
 }
 
-.content img:not(.portfolio-grid){
+.content .text-body li {
+  font-size: 18px;
+  color: #2f3537;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.content img{
   display: block;
   margin: 50px auto 50px;
 }
@@ -934,3 +952,65 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+
+
+/*==================
+Gallery
+ =================*/
+
+
+.gallery-title
+{
+  font-size: 36px;
+  color: #42B32F;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+  font-size: 18px;
+  border: 1px solid #42B32F;
+  border-radius: 5px;
+  text-align: center;
+  color: #42B32F;
+  margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+  font-size: 18px;
+  border: 1px solid #42B32F;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+  background-color: #42B32F;
+  color: white;
+}
+
+.port-image
+{
+  width: 100%;
+}
+
+.gallery_product
+{
+  margin-bottom: auto;
+}
+
+.tz-gallery .gallery_product img{
+  height: 300px
+}

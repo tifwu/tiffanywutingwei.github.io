@@ -17,61 +17,59 @@ Load Page
 Ajax link page transitions
 ---------------------------------------------*/
 
-	$("a.ajax-link").live("click", function(){
-		$this = $(this);
-		var link = $this.attr('href');
-		var current_url = $(location).attr('href');	
-		
-		if( link != current_url && link != '#' ) { 
-		$.ajax({
-			url:link,
-			processData:true, 
-			dataType:'html', 
-			success:function(data){
-				document.title = $(data).filter('title').text(); 
-				current_url = link;
-        if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
-        
-          setTimeout(function(){						
-          $('#preloader').delay(50).fadeIn(600);
-          $('html, body').delay(1000).animate({ scrollTop:  0  },1000);						
-					
-					setTimeout(function(){
-							
-            $('#ajax-content').html($(data).filter('#ajax-content').html());
-            $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
+    $("a.ajax-link").live("click", function(){
+        $this = $(this);
+        var link = $this.attr('href');
+        var current_url = $(location).attr('href');
 
-						$('body').waitForImages({
-							finished: function() {
-								Website();
-								backLoading();
-								$('.opacity-nav').delay(50).fadeOut(600);
-              },										
-              waitForAll: true
-						});								
-					},1000);
-					},0);
-			}
-		});
-    }
-    return false;
-	});
+        if( link != current_url && link != '#' ) {
+            $.ajax({
+                url:link,
+                processData:true,
+                dataType:'html',
+                success:function(data){
+                    document.title = $(data).filter('title').text();
+                    current_url = link;
+                    if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
+
+                    setTimeout(function(){
+                        $('#preloader').fadeIn(100);
+                        $('html, body').animate({ scrollTop:  0  },100);
+
+                        setTimeout(function(){
+
+                            $('#ajax-content').html($(data).filter('#ajax-content').html());
+                            $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
+
+                            $('body').waitForImages({
+                                finished: function() {
+                                    Website();
+                                    backLoading();
+                                },
+                                waitForAll: true
+                            });
+                        },1000);
+                    },0);
+                }
+            });
+        }
+        return false;
+    });
 
 
-/*-------------------------------------------
-When you click back arrow
----------------------------------------------*/
+    /*-------------------------------------------
+    When you click back arrow
+    ---------------------------------------------*/
 
 
 function backLoading() {
-
     $(window).on("popstate", function () {
         $('body').fadeOut('slow',function(){
             location.reload();
         });
         $('body').fadeIn();
     });
-}   
+}
 
 /*-------------------------------------------
 Load Page - next Open Site
@@ -79,16 +77,13 @@ Load Page - next Open Site
 
 function Website() {
 
-		CheckScripts();		
+		CheckScripts();
 		Masonry();
 		$('body').jKit();
 		backgroundmenu();
-		setTimeout(function(){
-			$(".preloader").fadeOut(500);							
-		},2000);
-		setTimeout(function(){
-			$('header').fadeIn();							
-		},500);
+        setTimeout(function(){
+            $(".preloader").fadeOut(500);
+        },2000);
 }
 
 
@@ -138,9 +133,9 @@ function backgroundmenu() {
             } else {
                 $('header').fadeIn();
             }
-        }); 
+        });
      }
-     
+
      if($("#header-white").length) {
 
          $(window).scroll(function(){
@@ -151,7 +146,7 @@ function backgroundmenu() {
             } else {
                 $('header').css( "background", "white" );
             }
-        }); 
+        });
      }
   });
 
@@ -176,7 +171,7 @@ $(document).ready(function(){
             loopCount: false,
         });
     }
-	}, 3000);
+	}, 2500);
 });
 }
 
@@ -201,7 +196,7 @@ function sidebarhero() {
         }
         fading.css('opacity',opacity);
     });
-  } 
+  }
 }
 
 
@@ -210,10 +205,10 @@ Open Check Scription
 ---------------------------------------------*/
 
 function OpenCheck() {
-
+    console.log('hiding preloader');
     setTimeout(function() {
         hidePreloader();
-    }, 1000);
+    }, 1);
 }
 
 
@@ -238,9 +233,14 @@ function showPreloader() {
 }
 
 function hidePreloader() {
-  $(".preloader").delay(2000).fadeOut("slow");
+  $(".preloader").fadeOut("slow");
+  $('header').fadeIn();
 }
 
 
 
-})//End
+})
+
+
+
+//End
