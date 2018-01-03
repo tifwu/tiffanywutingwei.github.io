@@ -48,7 +48,7 @@ Ajax link page transitions
                                 },
                                 waitForAll: true
                             });
-                        },1000);
+                        },500);
                     },0);
                 }
             });
@@ -83,7 +83,7 @@ function Website() {
 		backgroundmenu();
         setTimeout(function(){
             $(".preloader").fadeOut(500);
-        },2000);
+        },500);
 }
 
 
