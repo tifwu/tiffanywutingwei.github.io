@@ -345,23 +345,6 @@ header .ajax-link{
   text-align: left;
 }
 
-/*
-==========================
-Index
-==========================
- */
-
-.bg {
-  /* The image used */
-  background-image: url(../img/landing.jpg);
-
-  /* Full height */
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*
 **************************
@@ -447,6 +430,18 @@ CONTENT
   text-align: left;
 }
 
+          #site-type .typed-cursor{
+            opacity: 1;
+            font-weight: 900;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+            font-size: 42px;
+          }
+
+
 .portfolio-grid .grid-item img {
   display: block;
   margin: auto;
@@ -488,6 +483,7 @@ CONTENT
             -ms-animation: blink 0.7s infinite;
             -o-animation: blink 0.7s infinite;
             animation: blink 0.7s infinite;
+            font-size: 42px;
         }
         @-keyframes blink{
             0% { opacity:1; }
@@ -534,6 +530,7 @@ CONTENT
 .content .text-overview{
   width: 100%;
   margin: 100px auto 100px;
+  padding: 5% auto;
 }
 
 .content .text-overview h2{
@@ -553,7 +550,7 @@ CONTENT
 }
 
 div .center-div{
-  margin-top: -50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 div .center-div p{
