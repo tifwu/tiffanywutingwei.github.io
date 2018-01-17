@@ -562,9 +562,9 @@ div .center-div h2 {
   text-align: center;
 }
 
-
+/*===================+/
 /*Project body*/
-
+/*===================*/
 
 .content .text-body{
   width: 100%;
@@ -662,6 +662,7 @@ iframe{
   list-style-type: circle;
   padding: 10px;
 }
+
 
 /*
 **************************
