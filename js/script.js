@@ -34,12 +34,11 @@ Ajax link page transitions
 
                     setTimeout(function(){
                         $('#preloader').fadeIn(100);
-                        $('html, body').animate({ scrollTop:  0  },100);
+                        $('html, body').animate({ scrollTop:  0  },500);
 
                         setTimeout(function(){
 
                             $('#ajax-content').html($(data).filter('#ajax-content').html());
-                            $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
 
                             $('body').waitForImages({
                                 finished: function() {
@@ -82,7 +81,7 @@ function Website() {
 		$('body').jKit();
 		backgroundmenu();
         setTimeout(function(){
-            $(".preloader").fadeOut(500);
+            $(".preloader").fadeOut(800);
         },500);
 }
 
@@ -96,7 +95,6 @@ function CheckScripts() {
   $(document).ready(function(){
     preloaderCheck();
     Typewriting();
-    sidebarhero();
   });
 
 }
@@ -176,28 +174,6 @@ $(document).ready(function(){
 }
 
 
-/*-------------------------------------------
-Amazing Fade with scroll Sidebar
----------------------------------------------*/
-
-function sidebarhero() {
-
-  if($("#hero").length) {
-    var fadeStart=100,fadeUntil=800,fading = $('#hero');
-
-    $(window).bind('scroll', function(){
-        var offset = $(document).scrollTop()
-            ,opacity=0
-        ;
-        if( offset<=fadeStart ){
-            opacity=1;
-        }else if( offset<=fadeUntil ){
-            opacity=1-offset/fadeUntil;
-        }
-        fading.css('opacity',opacity);
-    });
-  }
-}
 
 
 /*-------------------------------------------
