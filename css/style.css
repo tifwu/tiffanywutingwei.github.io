@@ -406,7 +406,7 @@ CONTENT
   width: 1140px;
   margin: auto;
   padding: 10% 0 15% 0;
-  background-image: url(../img/landing.jpg);
+  background-image: url(../img/landing2.jpg);
 }
 
 #site-type h1{
@@ -652,6 +652,8 @@ iframe{
   text-align: center;
   margin: 50px auto 50px;
 }
+
+
 
 .text-body ul{
   font-size: 18px;
@@ -1115,7 +1117,7 @@ About Grid
 }
 
 .row-about {
-  width: 60%;
+  width: 70%;
   position: relative;
   text-align: center;
   margin: 30px auto 30px;
