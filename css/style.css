@@ -403,10 +403,14 @@ CONTENT
 /*hmepage*/
 
 #site-type{
-  width: 1140px;
-  margin: auto;
-  padding: 10% 0 15% 0;
+  /*width: 1140px;*/
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 8.33333333%;
+  padding-top: 10%;
+  padding-bottom: 15%;
   background-image: url(../img/landing2.jpg);
+  position: relative;
 }
 
 #site-type h1{
@@ -1117,7 +1121,7 @@ About Grid
 }
 
 .row-about {
-  width: 70%;
+  width: 80%;
   position: relative;
   text-align: center;
   margin: 30px auto 30px;
@@ -1154,4 +1158,19 @@ About Grid
 .card img {
   display: block;
   margin: 0;
+}
+
+.about-do h4 {
+  font-weight: 700;
+}
+
+.about-do p {
+  font-family: inherit;
+  text-align: left;
+  margin: auto 2px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-do {
+  display: inline-block;
 }
