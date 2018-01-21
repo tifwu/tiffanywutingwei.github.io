@@ -161,7 +161,7 @@ $(document).ready(function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
             strings: ["problem solver", "keen observer", "UX designer"],
-            typeSpeed: 100,
+            typeSpeed: 150,
             backDelay: 500,
             loop: false,
             contentType: 'html', // or text
@@ -169,7 +169,7 @@ $(document).ready(function(){
             loopCount: false,
         });
     }
-	}, 2500);
+	}, 3500);
 });
 }
 

@@ -31,11 +31,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width: 710px !important;
-    padding-right: 320px;
-  }
 
   .portfolio-grid{
 
@@ -85,11 +80,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width: 580px !important;
-    padding-right: 250px;
-  }
 
   .portfolio-grid{
 
@@ -130,11 +120,7 @@
   .prev-next{
     max-width:600px;
   }
-  
-  .home-sidebar{
-    display:none;
-  }
-  
+
   ul.header-nav{
     width:50%;
   
@@ -152,12 +138,6 @@
   Portfolio Grid
   **************************
   */
-
-  #portfolio-sidebar{
-
-    width:630px !important;
-    padding-right: 0;
-  }
 
   .portfolio-grid{
     width:630px;
@@ -202,10 +182,7 @@
   .prev-next{
     max-width:400px;
   }
-  
-  .home-sidebar{
-    display:none;
-  }
+
   
   ul.header-nav{
     width:50%;
@@ -237,9 +214,9 @@
     display:block;
   }
 
-  header.boxed{
+  /*header.boxed{
     display:none !important;
-  }  
+  }  */
   
   #footer-left{text-align:center;}
 
@@ -249,11 +226,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width:430px !important;
-    padding-right: 0;
-  }
 
   .portfolio-grid{
     width:430px;
@@ -299,11 +271,7 @@
   .prev-next{
     max-width:280px;
   }
-  
-  .home-sidebar{
-    display:none;
-  }
- 
+
   .one-column, .two-column{
     width:100%;
   }
@@ -324,9 +292,9 @@
     margin-bottom:100px;
   }
   
-  header.boxed{
+  /*header.boxed{
     display:none !important;
-  }  
+  }  */
   
   #footer-left{text-align:center;}
   
@@ -341,11 +309,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width:310px !important;
-    padding-right: 0;
-  }
 
   .portfolio-grid{
     width:310px;
