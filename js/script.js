@@ -161,7 +161,7 @@ $(document).ready(function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
             strings: ["problem solver", "keen observer", "UX designer"],
-            typeSpeed: 150,
+            typeSpeed: 100,
             backDelay: 500,
             loop: false,
             contentType: 'html', // or text
