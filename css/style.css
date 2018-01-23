@@ -1045,6 +1045,7 @@ Gallery
 .gallery_product
 {
   margin-bottom: auto;
+  overflow: hidden;
 }
 
 .tz-gallery .gallery_product img{

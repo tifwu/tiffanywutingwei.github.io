@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html :not(.grid-item, .portfolio-grid){
-  font-family: "Raleway", "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
@@ -1083,7 +1083,7 @@ html :not(.portfolio-grid){
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.42857143;
@@ -5992,7 +5992,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Raleway", "Helvetica Neue", "Open Sans", sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", "Open Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
