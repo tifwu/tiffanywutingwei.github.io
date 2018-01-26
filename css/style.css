@@ -537,7 +537,6 @@ CONTENT
 
 .content .text-overview{
   width: 100%;
-  margin: 100px auto 100px;
   padding: 5% auto;
 }
 
@@ -555,6 +554,14 @@ CONTENT
   font-weight:400;
   letter-spacing:1px;
   text-align: center;
+}
+
+.content .spacer {
+  padding: 70px 0;
+}
+
+.content .bg-grey {
+  background-color: #f9f9f9;
 }
 
 div .center-div{
