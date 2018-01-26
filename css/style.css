@@ -364,7 +364,6 @@ CONTENT
 }
 
 .project-title{
-  width: 80%;
   height: 100px;
   margin: auto;
 }
@@ -397,6 +396,12 @@ CONTENT
   position: relative;
   width: 100%;
   margin: 50px auto;
+}
+
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
 /*hmepage*/
@@ -553,8 +558,10 @@ CONTENT
 }
 
 div .center-div{
+  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: inline-block;
 }
 div .center-div p{
   text-align: center;
@@ -570,7 +577,6 @@ div .center-div h2 {
 /*===================*/
 
 .content .text-body{
-  width: 100%;
   margin: 100px auto 100px;
   padding: inherit;
   display: inherit;
