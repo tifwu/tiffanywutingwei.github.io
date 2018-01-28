@@ -404,6 +404,20 @@ CONTENT
   margin: 0 auto;
 }
 
+
+.about-img {
+  border-radius: 50%;
+  width: 80%;
+  padding: 1%;
+  border: 1px solid #DDD;
+}
+
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
 /*hmepage*/
 
 #site-type{
@@ -562,6 +576,16 @@ CONTENT
 
 .content .bg-grey {
   background-color: #f9f9f9;
+}
+
+.content .icon {
+  font-size: 45px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0 30px;
+  border-radius: 100%;
 }
 
 div .center-div{
@@ -1159,4 +1183,5 @@ About Grid
 
 .about-do {
   display: inline-block;
+  text-align: left;
 }
