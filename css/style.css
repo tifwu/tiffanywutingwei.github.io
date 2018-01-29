@@ -39,8 +39,7 @@ a{
 	-moz-transition: all 0.2s ease-in;
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in; 
-	border-bottom:1px solid #dedede;
+	transition: all 0.2s ease-in;
 }
 
 a:focus {
@@ -286,7 +285,6 @@ header .logo > a{
   float:left;
   line-height:80px;
   padding-right:40px;
-  border-bottom: 1px solid #f1f1f1;
 }
 
 header .logo > a:hover{
@@ -763,6 +761,30 @@ Slideshow
   white-space: nowrap;
 }
 
+
+.btn-buddyup {
+  color: #fff;
+  background-color: #FF5F00;
+  border-color: #FF5F00;
+}
+.btn-buddyup:focus,
+.btn-buddyup.focus {
+  color: #fff;
+  background-color: #FF5F00;
+  border-color: #7F2F00;
+}
+.btn-buddyup:hover {
+  color: #fff;
+  background-color: #FF734C;
+  border-color: #FF734C;
+}
+.btn-buddyup:active,
+.btn-buddyup.active,
+.open > .dropdown-toggle.btn-buddyup {
+  color: #fff;
+  background-color: #FF5F00;
+  border-color: #FF5F00;
+}
 
 
 /*
