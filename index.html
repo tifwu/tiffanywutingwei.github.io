@@ -65,6 +65,17 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=167733949"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+
+
 	</head>
 	<body>
 		<div id="fh5co-wrapper">
@@ -77,6 +88,26 @@
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 						<h1 id="fh5co-logo"><a href="index.html"><span>Tiffany</span> <span style="font-weight: 200">Wu</span></a></h1>
 
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="index.html#fh5co-work-section" class="active fh5co-sub-ddown">Projects</a>
+									<ul class="fh5co-sub-menu">
+										<li><a href="#" target="_self">Google Internship</a></li>
+										<li><a href="./kasvi.html" target="_self">Kasvi</a></li>
+										<li><a href="./buddyup.html" target="_self">BuddyUp</a></li>
+										<li><a href="./homiecycle.html" target="_self">HomieCycle</a></li>
+										<li><a href="#" target="_self">Detroit Zoo Volunteers</a></li>
+										<li><a href="./playground.html" target="_self">Playground</a></li>
+									</ul>
+								</li>
+								<li><a href="./index.html#fh5co-content-section">About</a></li>
+								<li><a href="./index.html#fh5co-contact-section">Contact</a></li>
+								<li><a href="img/TiffanyWu-resume.pdf">Resume</a></li>
+							</ul>
+						</nav>
+
 					</div>
 				</div>
 			</header>
@@ -87,13 +118,80 @@
 			<div class="fh5co-cover container" data-stellar-background-ratio="0.5" style="background-image: url(img/landing-1.jpg)">
 				<div class="intro desc animate-box">
 					<h2>Hi! I'm Tiffany Wu,</h2>
-					<h2>a <span class="underline-magical" style="display: inline;">brand new portfolio</span> is happening soon! </h2>
-					<h2>Please <span class="underline-magical" style="display: inline;">check back later.</span></h2>
+					<h2>a <span class="underline-magical" style="display: inline;">UX Designer</span> passionate </h2>
+					<h2>about <span class="underline-magical" style="display: inline;">bridging gaps</span> between people and products</h2>
 				</div>
 			</div>
 		</div>
 		<!-- end:header-top -->
 
+		<div id="fh5co-work-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/google/landing.jpg);">
+							<!--<a class="image-popup text-center" href="#">-->
+								<div class="prod-title">
+									<h3>Google Internship: Coming soon</h3>
+									<span>Interaction design, UX internship</span>
+								</div>
+							<!--</a>-->
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/kasvi/landing-thumbnail.jpg);">
+							<a class="image-popup text-center" href="kasvi.html">
+								<div class="prod-title">
+									<h3>kasvi</h3>
+									<span>UX design, product thinking</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/homiecycle/landing.jpg);">
+							<a class="image-popup text-center" href="./homiecycle.html">
+								<div class="prod-title">
+									<h3>HomieCycle</h3>
+									<span>UX, service design</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/buddyup/landing.jpg);">
+							<a class="image-popup text-center" href="./buddyup.html">
+								<div class="prod-title">
+									<h3>BuddyUp</h3>
+									<span>UX, interaction design</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/detroit-zoo/landing.jpg);">
+							<!--<a class="image-popup text-center" href="#">-->
+								<div class="prod-title">
+									<h3>Detroit Zoo Volunteer Program: Coming soon</h3>
+									<span>UX consulting</span>
+								</div>
+							<!--</a>-->
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/graphic-design/landing-thumbnail.jpg);">
+							<a class="image-popup text-center" href="./playground.html">
+								<div class="prod-title">
+									<h3>Playground</h3>
+									<span>Graphic design, doodles</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- fh5co-work-section -->
 
 
 			<div id="fh5co-content-section" class="fh5co-section-gray">
@@ -119,7 +217,45 @@
 			<!-- fh5co-content-section -->
 
 
-			<div id="fh5co-contact-section">
+		<div id="fh5co-services-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>My Toolbox</h3>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-tools"></i></span>
+							<h3>UX Design</h3>
+							<p>I transform user needs into creative design solutions, encompassing the realm of digital, hardware, service and beyond</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-magnifying-glass"></i></span>
+							<h3>User Research</h3>
+							<p>I conduct head-to-toe user research, including contextual inquiry, survey design and usability testing</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-circle-compass"></i></span>
+							<h3>Experiment Design</h3>
+							<p>I frame ambiguous question of user behaviors with rigorous experiment design of an <a href="http://dspace.cityu.edu.hk/handle/2031/8806" alt="link to my paper">eye tracking study</a> and statistical analysis</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- fh5co-services-section -->
+
+
+
+			<div id="fh5co-contact-section" class="fh5co-section-gray">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
