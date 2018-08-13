@@ -7363,4 +7363,17 @@ button.close {
   display: block;
 }
 
+.scale-anm
+{
+  transform: scale(1);
+}
+
+.tile {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+
 /** gallery css **/
