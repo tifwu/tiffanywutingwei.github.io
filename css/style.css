@@ -90,6 +90,11 @@ figure {
  }
 }
 
+.shadowed {
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.54));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.54));
+}
+
 
 .fa-ic-round {
   font-size: 45px;
