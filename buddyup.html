@@ -43,6 +43,9 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+	<!--lightbox-->
+	<link rel="stylesheet" href="css/lightbox.css">
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -174,7 +177,10 @@
 								<h5>Design Process</h5>
 								<h2>Iterate for real needs</h2>
 								<p>BuddyUp is a mobile app design of a semester-long solo project. I conducted the end-to-end research and design process, from stalking sport players on the field to validating design decisions by testing with target users. My design evolved along <strong>several rounds of iteration</strong> at different stages.</p>
-							<img src="img/portfolio/buddyup/process-map.png" class="img-responsive">
+
+							<a href="img/portfolio/buddyup/process-map.png" data-lightbox="buddyup">
+								<img src="img/portfolio/buddyup/process-map.png" class="img-responsive image-padding">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -260,7 +266,9 @@
 								<p>Based on the findings, I brainstormed for several solutions to tackle the users’ needs, and then expanded the sketches into scenarios that captured users’ <strong>pain points</strong>, <strong>emotion</strong> and <strong>interactions</strong> with each solution.</p>
 
 								<div class="text-center">
-									<img src="img/portfolio/buddyup/storyboard_Page_2.jpg" style="width: 80%;" onclick="window.open(this.src)">
+									<a href="img/portfolio/buddyup/storyboard_Page_2.jpg" data-lightbox="buddyup">
+										<img src="img/portfolio/buddyup/storyboard_Page_2.jpg" style="width: 80%;" >
+									</a>
 								</div>
 							</div>
 						</div>
@@ -277,10 +285,14 @@
 
 								<div class="row image-padding">
 									<div class="col-md-6 col-sm-10">
-										<img src="img/portfolio/buddyup/personas.jpeg" style="width: 90%; display: inline-block;" onclick="window.open(this.src)">
+										<a href="img/portfolio/buddyup/personas.jpeg" data-lightbox="buddyup">
+											<img src="img/portfolio/buddyup/personas.jpeg" style="width: 90%; display: inline-block;" >
+										</a>
 									</div>
 									<div class="col-md-6 col-sm-10">
-										<img src="img/portfolio/buddyup/personas2.jpeg" style="width: 90%; display: inline-block;" onclick="window.open(this.src)">
+										<a href="img/portfolio/buddyup/personas2.jpeg" data-lightbox="buddyup">
+											<img src="img/portfolio/buddyup/personas2.jpeg" style="width: 90%; display: inline-block;" >
+										</a>
 									</div>
 								</div>
 							</div>
@@ -334,13 +346,19 @@
 							<p>Based on the design rationale, I developed <strong>multiple wireframes</strong> with different <strong>task flows</strong>. I then evaluated and landed on the final flow by conducting <strong>Questions-Options-Criteria analysis</strong> and collecting user feedbacks.</p>
 
 							<div class="text-center image-padding">
-								<img src="img/portfolio/buddyup/wireframes/Wireframe-002.jpg" style="width: 45%; display: inline-block;" onclick="window.open(this.src)">
-								<img src="img/portfolio/buddyup/wireframes/Wireframe-003.jpg" style="width: 45%; display: inline-block;" onclick="window.open(this.src)">
+								<a href="img/portfolio/buddyup/wireframes/Wireframe-002.jpg" data-lightbox="buddyup">
+									<img src="img/portfolio/buddyup/wireframes/Wireframe-002.jpg" style="width: 45%; display: inline-block;">
+								</a>
+								<a href="img/portfolio/buddyup/wireframes/Wireframe-003.jpg" data-lightbox="buddyup">
+									<img src="img/portfolio/buddyup/wireframes/Wireframe-003.jpg" style="width: 45%; display: inline-block;">
+								</a>
 							</div>
 							<p class="text-center">I developed wireframes of different task flows to evaluate the number of screens and logic of design</p>
 
 							<div class="text-center image-padding">
-								<img src="img/portfolio/buddyup/wireframes/QOC-001.jpeg" style="width:90%;">
+								<a href="img/portfolio/buddyup/wireframes/QOC-001.jpeg" data-lightbox="buddyup">
+									<img src="img/portfolio/buddyup/wireframes/QOC-001.jpeg" style="width:90%;">
+								</a>
 							</div>
 							<p class="text-center">QOC analysis for several design questions helps me evaluate the trade-offs between different options</p>
 
@@ -557,6 +575,15 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
+
+	<script src="js/lightbox.js"></script>
+	<!-- lightbox -->
+	<script>
+		lightbox.option({
+			"positionFromTop": 125
+		});
+	</script>
+
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>

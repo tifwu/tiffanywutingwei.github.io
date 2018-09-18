@@ -42,6 +42,9 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+	<!--lightbox-->
+	<link rel="stylesheet" href="css/lightbox.css">
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -199,7 +202,9 @@
 						</div>
 
 						<div class="row-bottom-padded-md text-center">
-							<img src="img/portfolio/google/process.png" class="img-responsive">
+							<a href="img/portfolio/google/process.png" data-lightbox="google">
+								<img src="img/portfolio/google/process.png" class="img-responsive">
+							</a>
 						</div>
 
 					</div>
@@ -359,6 +364,14 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
+
+	<script src="js/lightbox.js"></script>
+	<!-- lightbox -->
+	<script>
+        lightbox.option({
+            "positionFromTop": 125
+        });
+	</script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>

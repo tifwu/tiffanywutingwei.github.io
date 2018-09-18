@@ -42,6 +42,9 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+	<!--lightbox-->
+	<link rel="stylesheet" href="css/lightbox.css">
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -191,7 +194,9 @@
 								<h2>Reconstruct the system with mixed methods</h2>
 
 							<div class="image-padding">
-								<img src="img/portfolio/detroit-zoo/process.png" class="img-responsive">
+								<a href="img/portfolio/detroit-zoo/process.png" data-lightbox="zoo">
+									<img src="img/portfolio/detroit-zoo/process.png" class="img-responsive">
+								</a>
 							</div>
 						</div>
 					</div>
@@ -211,7 +216,9 @@
 
 
 								<div class="image-padding text-center col-md-4 col-md-offset-4 col-sm-10">
-									<img src="img/portfolio/detroit-zoo/contract.png" class="img-responsive row-bottom-padded-sm">
+									<a href="img/portfolio/detroit-zoo/contract.png" data-lightbox="zoo">
+										<img src="img/portfolio/detroit-zoo/contract.png" class="img-responsive row-bottom-padded-sm">
+									</a>
 									<caption>A client contract with mutually-agreed expectations, tentative plan and timeline</caption>
 								</div>
 
@@ -279,7 +286,9 @@
 							between each stage of the training process.</p>
 
 						<div class="image-padding col-md-12">
-							<img src="img/portfolio/detroit-zoo/system-map.png" class="img-responsive col-md-12">
+							<a href="img/portfolio/detroit-zoo/system-map.png" data-lightbox="zoo">
+								<img src="img/portfolio/detroit-zoo/system-map.png" class="img-responsive col-md-12">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -297,7 +306,9 @@
 						</div>
 						<div class="row row-bottom-padded-sm">
 							<div class="col-md-6">
-								<img src="img/portfolio/detroit-zoo/survey1.png" class="img-responsive">
+								<a href="img/portfolio/detroit-zoo/survey1.png" data-lightbox="zoo">
+									<img src="img/portfolio/detroit-zoo/survey1.png" class="img-responsive">
+								</a>
 							</div>
 							<div class="col-md-4">
 								<p><strong>A combination of online and in-person</strong> is the most preferable training format across generations</p>
@@ -305,7 +316,9 @@
 						</div>
 						<div class="row row-bottom-padded-sm">
 							<div class="col-md-6">
-								<img src="img/portfolio/detroit-zoo/survey2.png" class="img-responsive">
+								<a href="img/portfolio/detroit-zoo/survey2.png" data-lightbox="zoo">
+									<img src="img/portfolio/detroit-zoo/survey2.png" class="img-responsive">
+								</a>
 							</div>
 							<div class="col-md-4">
 								<p>Younger volunteers are relatively more open to learning with technology
@@ -314,7 +327,9 @@
 						</div>
 						<div class="row row-bottom-padded-md">
 							<div class="col-md-6">
-								<img src="img/portfolio/detroit-zoo/survey3.png" class="img-responsive">
+								<a href="img/portfolio/detroit-zoo/survey3.png" data-lightbox="zoo">
+									<img src="img/portfolio/detroit-zoo/survey3.png" class="img-responsive">
+								</a>
 							</div>
 							<div class="col-md-4">
 								<p>Technology is useful for volunteers across generations
@@ -338,7 +353,9 @@
 							products. We also got product information they used for trainings.</p>
 
 						<div class="image-padding col-md-12">
-							<img src="img/portfolio/detroit-zoo/comparative-zoo.png" class="img-responsive col-md-12">
+							<a href="img/portfolio/detroit-zoo/comparative-zoo.png" data-lightbox="zoo">
+								<img src="img/portfolio/detroit-zoo/comparative-zoo.png" class="img-responsive col-md-12">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -442,14 +459,6 @@
 				</div>
 
 
-			<div class="container" id="fh5co-project">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-
-
-					</div>
-				</div>
-			</div>
 
 
 			<div class="fh5co-section-gray">
@@ -574,7 +583,9 @@
 									and usability concerns</strong>.</p>
 						</div>
 						<div class="image-padding">
-							<img src="img/portfolio/detroit-zoo/product-analysis.png" class="img-responsive">
+							<a href="img/portfolio/detroit-zoo/product-analysis.png" data-lightbox="zoo">
+								<img src="img/portfolio/detroit-zoo/product-analysis.png" class="img-responsive">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -617,7 +628,9 @@
 						</div>
 
 						<div class="text-center col-md-8 col-md-offset-2">
-							<img src="img/portfolio/detroit-zoo/takeaway.JPG" class="img-responsive row-bottom-padded-sm">
+							<a href="img/portfolio/detroit-zoo/takeaway.JPG" data-lightbox="zoo">
+								<img src="img/portfolio/detroit-zoo/takeaway.JPG" class="img-responsive row-bottom-padded-sm">
+							</a>
 							<caption>Best part about this project: visit the zoo!</caption>
 						</div>
 
@@ -696,6 +709,15 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
+
+
+	<script src="js/lightbox.js"></script>
+	<!-- lightbox -->
+	<script>
+		lightbox.option({
+			"positionFromTop": 125
+		});
+	</script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>

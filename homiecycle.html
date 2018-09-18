@@ -42,6 +42,9 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+	<!--lightbox-->
+	<link rel="stylesheet" href="css/lightbox.css">
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -211,7 +214,9 @@
 							</div>
 
 							<div class="row-bottom-padded-md text-center">
-								<img src="img/portfolio/homiecycle/process.png" class="image-responsive">
+								<a href="img/portfolio/homiecycle/process.png" data-lightbox="homiecycle">
+									<img src="img/portfolio/homiecycle/process.png" class="image-responsive">
+								</a>
 							</div>
 						</div>
 
@@ -274,8 +279,10 @@
 						</div>
 
 						<div class="col-md-4 col-md-offset-2 col-xs-10">
+							<a href="img/portfolio/homiecycle/observation.JPG" data-lightbox="homiecycle">
 								<img src="img/portfolio/homiecycle/observation.JPG" style="width: 80%; display: inline-block;
 								image-orientation: from-image;" onclick="window.open(this.src)" class="image-responsive">
+							</a>
 						</div>
 
 					</div>
@@ -368,10 +375,14 @@
 
 					<div class="row image-padding">
 						<div class="col-md-6 col-xs-10">
-							<img src="img/portfolio/homiecycle/solution.jpg" class="img-responsive" onclick="window.open(this.src)">
+							<a href="img/portfolio/homiecycle/solution.jpg" data-lightbox="homiecycle">
+								<img src="img/portfolio/homiecycle/solution.jpg" class="img-responsive" onclick="window.open(this.src)">
+							</a>
 						</div>
 						<div class="col-md-6 col-xs-10">
-							<img src="img/portfolio/homiecycle/storyboard.JPG" class="img-responsive" onclick="window.open(this.src)">
+							<a href="img/portfolio/homiecycle/storyboard.JPG" data-lightbox="homiecycle">
+								<img src="img/portfolio/homiecycle/storyboard.JPG" class="img-responsive" onclick="window.open(this.src)">
+							</a>
 						</div>
 					</div>
 
@@ -391,7 +402,9 @@
 						</div>
 
 						<div class="col-md-8 col-md-offset-2 row-bottom-padded-md text-center" style="height: 450px">
-							<img class="img-responsive row-bottom-padded-sm" style="height:100%" src="img/portfolio/homiecycle/testing.jpg">
+							<a href="img/portfolio/homiecycle/testing.jpg" data-lightbox="homiecycle">
+								<img class="img-responsive row-bottom-padded-sm" style="height:100%" src="img/portfolio/homiecycle/testing.jpg">
+							</a>
 							<p>Testing prototype and collect feedbacks from target users</p>
 						</div>
 
@@ -461,7 +474,9 @@
 
 
 						<div class="col-md-8 col-md-offset-2 row-bottom-padded-sm text-center" style="height: 450px">
-							<img class="img-responsive row-bottom-padded-sm" style="height:100%" src="img/portfolio/homiecycle/design-expo.JPG">
+							<a href="img/portfolio/homiecycle/design-expo.JPG" data-lightbox="homiecycle">
+								<img class="img-responsive row-bottom-padded-sm" style="height:100%" src="img/portfolio/homiecycle/design-expo.JPG">
+							</a>
 							<p>Presenting in a college-wide design exposition</p>
 						</div>
 
@@ -543,6 +558,14 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
+
+	<script src="js/lightbox.js"></script>
+	<!-- lightbox -->
+	<script>
+        lightbox.option({
+            "positionFromTop": 125
+        });
+	</script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
