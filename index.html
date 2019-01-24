@@ -71,7 +71,7 @@
 		<div id="fh5co-page">
 
 		<div id="fh5co-header">
-			<header id="fh5co-header-section">
+			<header id="fh5co-header-section" class="notScrolled">
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
@@ -84,10 +84,10 @@
 									<a href="index.html#fh5co-work-section" class="active fh5co-sub-ddown">Projects</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="./google.html" target="_self">Google Internship</a></li>
+                                        <li><a href="./insight.html" target="_self">Insight</a></li>
 										<li><a href="./kasvi.html" target="_self">Kasvi</a></li>
 										<li><a href="./buddyup.html" target="_self">BuddyUp</a></li>
 										<li><a href="./detroit-zoo.html" target="_self">Detroit Zoo Volunteers</a></li>
-										<li><a href="./homiecycle.html" target="_self">HomieCycle</a></li>
 										<li><a href="./playground.html" target="_self">Playground</a></li>
 									</ul>
 								</li>
@@ -119,7 +119,7 @@
 				<div class="row">
 					<div class="col-md-7 col-sm-7">
 						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/google/landing.jpg);">
-							<a class="image-popup text-center" href="google.html">
+							<a class="image-popup text-center" href="./google.html">
 								<div class="prod-title">
 									<h3>Google Internship</h3>
 									<span>Mobile interaction design, UX internship</span>
@@ -128,16 +128,39 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-sm-5">
-						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/kasvi/landing-thumbnail.jpg);">
-							<a class="image-popup text-center" href="kasvi.html">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/insight/landing.jpg);">
+							<a class="image-popup text-center" href="./insight.html">
 								<div class="prod-title">
-									<h3>kasvi</h3>
-									<span>UX design, product thinking</span>
+									<h3>Insight</h3>
+									<span>Mobile UX design</span>
 								</div>
 							</a>
 						</div>
 					</div>
+                    
 					<div class="col-md-5 col-sm-5">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/buddyup/landing-thumbnail.jpg);">
+							<a class="image-popup text-center" href="./buddyup.html">
+								<div class="prod-title">
+									<h3>BuddyUp</h3>
+									<span>Mobile UX design</span>
+								</div>
+							</a>
+						</div>
+					</div>
+                    
+                    <div class="col-md-7 col-sm-7">
+						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/kasvi/landing-thumbnail.jpg);">
+							<a class="image-popup text-center" href="./kasvi.html">
+								<div class="prod-title">
+									<h3>kasvi</h3>
+									<span>Product design, ubiquitous computing</span>
+								</div>
+							</a>
+						</div>
+					</div>
+                    
+                    <div class="col-md-6 col-sm-6">
 						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/detroit-zoo/landing.jpg);">
 							<a class="image-popup text-center" href="./detroit-zoo.html">
 								<div class="prod-title">
@@ -147,26 +170,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-md-7 col-sm-7">
-						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/buddyup/landing.jpg);">
-							<a class="image-popup text-center" href="./buddyup.html">
-								<div class="prod-title">
-									<h3>BuddyUp</h3>
-									<span>Mobile interaction design</span>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/homiecycle/landing.jpg);">
-							<a class="image-popup text-center" href="./homiecycle.html">
-								<div class="prod-title">
-									<h3>HomieCycle</h3>
-									<span>Ubiquitous UX design</span>
-								</div>
-							</a>
-						</div>
-					</div>
+                    
 					<div class="col-md-6 col-sm-6">
 						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/graphic-design/landing-thumbnail.jpg);">
 							<a class="image-popup text-center" href="./playground.html">
@@ -320,8 +324,9 @@
 
 	<!-- jQuery -->
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/jquery.min.js"></script>
+    
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
