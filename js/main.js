@@ -224,8 +224,8 @@ function hasScrolled() {
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-         console.log("remove class");
-        $('header').removeClass('nav-up').addClass('nav-down');
+             console.log("remove class");
+            $('header').removeClass('nav-up').addClass('nav-down');
         }
     }
     
