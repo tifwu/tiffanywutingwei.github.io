@@ -393,13 +393,28 @@ figure {
 #fh5co-header-section {
   padding: 0;
   height: 95px;
-  position: absolute;
+/*  position: absolute;*/
   left: 0;
   width: 100%;
   z-index: 2;
-/*  background: white;*/
+  background: white;
 }
 
+body {
+    padding-top: 95px;
+}
+
+header {
+    height: 95px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -95px;
+}
 
 .nav-header {
   position: relative;
@@ -407,9 +422,6 @@ figure {
   width: 100%;
 }
 
-.nav-up {
-    top: -95px;
-}
 
 
 #fh5co-logo {
