@@ -224,7 +224,7 @@ figure {
   top: 50%;
   position: absolute;
   width: 100%;
-  margin-top: -30px;
+  margin-top: -70px;
   z-index: 2;
   color: #fff;
 }
@@ -585,7 +585,10 @@ header {
   color: #FCC72C !important;
 }
 
-#fh5co-work-section,
+#fh5co-work-section {
+    padding: 0 0 7em 0;
+}
+
 #fh5co-services-section,
 #fh5co-contact-section,
 #fh5co-content-section,
