@@ -136,6 +136,25 @@
 
 	});
 
+    
+    // scroll progress
+    
+    $(document).on('scroll resize', function() {
+     
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+        
+          var scrollColor = document.getElementById("projectColor").style.backgroundColor;
+        
+         
+         $('div#scroll-bar').width(scrolled + "%");
+        $('div#scroll-bar').css("background-color", scrollColor);
+        
+        
+        
+    });
+    
 
 	//navbar transition.
 //    window.onscroll = () => {
@@ -219,19 +238,19 @@ function hasScrolled() {
     
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-         console.log("add class");
+//         console.log("add class");
         $('header').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-             console.log("remove class");
+//             console.log("remove class");
             $('header').removeClass('nav-up').addClass('nav-down');
         }
     }
     
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta) {
-        console.log("return");
+//        console.log("return");
         return;
     }
     
@@ -276,3 +295,4 @@ function hasScrolled() {
 
 
 }());
+
